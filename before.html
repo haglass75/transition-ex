@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상요소 선택자</title>
+    <style>
+      p {
+        background-color: aqua;
+      }
+      .box {
+        background-color: red;
+      }
+      .box::before {
+        content: "🍟";
+        display: block;
+      }
+      .box::after {
+        content: "🍚";
+        display: block;
+      }
+      .box2{
+        background-color: cadetblue;
+      }
+      .box2::before{
+        content: "<before>";
+            color: red;
+            background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <span>🍕</span>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+    <span>🥨</span>
+
+    <p class="box">Lorem ipsum dolor sit amet consectetur</p>
+    <div class="box2">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      sequi obcaecati numquam quasi odio perspiciatis veniam distinctio rem
+      laudantium nostrum quam reiciendis odit id, iste sed doloribus itaque esse
+      perferendis.
+    </div>
+  </body>
+</html>
